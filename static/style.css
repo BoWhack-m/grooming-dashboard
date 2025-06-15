@@ -1,0 +1,6 @@
+body { background: black; color: gold; font-family: sans-serif; margin:0; }
+header { background: gold; color: black; padding:10px; text-align:center; }
+.video-container iframe { width:100%; height:400px; display:block; }
+.appointments { padding:20px; }
+.appointments ul { list-style:none; padding:0; }
+.appointments li { margin-bottom:10px; }
