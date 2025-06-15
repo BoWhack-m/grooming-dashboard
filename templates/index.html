@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Welcome to Ritchard’s Grooming</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header><h1>🐾 Welcome to Ritchard’s Grooming</h1></header>
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/tvKIZWlCMTI?autoplay=1&mute=1&loop=1&playlist=tvKIZWlCMTI"
+      frameborder="0" allow="autoplay"
+      style="pointer-events: none; width: 100%; height: 400px;"
+    ></iframe>
+  </div>
+  <div class="appointments">
+    <h2>Today's Appointments</h2>
+    <ul id="appt-list">
+      {% for a in appointments %}
+        <li><strong>{{a.time}}</strong> – {{a.client}} ({{a.service}})</li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
